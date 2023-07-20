@@ -1,4 +1,12 @@
-#new comment you already know 
+#new comment you already know
+def decodefun(newlist):
+    password_encode = []
+    for i in newlist:
+        i = int(i) + 3
+        password_encode.append(i)
+    pass_string = ''.join(str(num) for num in password_encode)
+    return pass_string
+
 def main():
     while True:
         print("Menu")
