@@ -14,12 +14,16 @@ def main():
         print("1. Encode")
         print("2. Decode")
         print("3. Quit")
-        option = int(input("Please enter an option:"))
+	print()
+        option = int(input("Please enter an option: "))
         if option == 1:
-            newlist = input("Please enter your password to encode")
+            newlist = input("Please enter your password to encode: ")
             print("Your password has been encoded and stored!")
+	    print()
         elif option == 2:
-            decodefun(newlist)
+            encodedpassword = decodefun(newlist)
+	    print("The encoded password is", str(encodedpassword) + ", and the original passowrd is", str(newlist) + ".")
+	    print()
         elif option == 3:
             break
 
