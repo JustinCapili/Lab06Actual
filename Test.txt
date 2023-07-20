@@ -15,5 +15,6 @@ def main():
         elif option == 3:
             break
 
-main()
+if __name__ == "__main__":
+	main()
 
